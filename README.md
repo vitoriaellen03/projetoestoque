@@ -9,7 +9,7 @@ Trabalhei como Líder da equipe coodernando da melhor forma possível para entre
   </div>
 
 <br><br>
-Site Original Em: <a href="https://devtools-developer.github.io/Projeto-Estoque/foxbox/">https://devtools-developer.github.io/Projeto-Estoque/foxbox/</a><br><br>
+Acesse o Site Em: <a href="https://devtools-developer.github.io/Projeto-Estoque/foxbox/">https://devtools-developer.github.io/Projeto-Estoque/foxbox/</a><br><br>
 <img src="./img/2.png">
 <img src="./img/3.png">
 <img src="./img/4.png">
