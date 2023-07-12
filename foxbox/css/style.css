@@ -1,0 +1,352 @@
+/* Importando fontes padrão */
+@import url("./fonts.css");
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+/*Zerando CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+/* Deixa responsivo */
+
+@media screen and (min-width: 25em){
+  html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
+}
+
+/* Safari <8 and IE <11 */
+@media screen and (min-width: 25em){
+  html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
+}
+@media screen and (min-width: 50em){
+
+html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* BODY */
+body {
+  height: 100vh;
+}
+
+
+/* NAV BAR - COMEÇO */
+
+  /* Cor e tamanho da nav-bar */
+  header{
+  width: 100%;
+  height: 4.2vw;
+  background-color: rgba(111, 28, 158,0.8);
+  position: fixed;
+}
+
+  /* Elementos da nav-bar - Formato geral */
+  .menu-content {
+    font-family: 'calibri';
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1vw;
+  }
+
+  /* Itens nav-bar - Posição */
+
+.stq{
+  display:none;
+}
+
+  .menu-content .list-itens{  
+    align-items: center;  
+    font-size: 1.5vw;
+    display: flex;
+    list-style: none;
+    gap: 1.5vw;  
+  }
+  
+    /* Textos nav-bar*/
+    .list-itens a {
+      text-decoration: none;
+      color: #fff;  
+      padding: 0.5rem;
+      transform: 2ms ease-in;
+      position: relative;
+    }
+
+    /* Hover da nav-bar*/
+    .list-itens a:hover {
+      background-color: rgba(255,255,255,0.3);
+      /*letter-spacing: 0.1rem;*/
+    }
+
+  /* Epecificações - nav-bar */
+
+    /* Logo nav-bar */
+      /*Posição*/
+      .logo{
+          align-items: center;
+          list-style:none;
+          font-size: 2.5vw;  
+          padding: 1rem; 
+          display: flex;
+          gap: 1vw;
+        }
+      /*fonte*/
+      .logo a{ 
+          text-decoration: none;
+          color: #ffffff;
+          position: fixed;
+          font-family: 'Archivo Black';
+}   
+  
+    /* Imgem do login - tamanho e alinhamento*/
+      .list-itens a img{ 
+        align-items: center;
+        list-style:none;
+        display: initial;
+        width: 1.5vw;
+        gap: 1vw;
+      }
+
+  /* Fim das especificações*/
+
+/* NAV BAR - FIM */
+
+/*Quadrado*/
+.quadrado{
+  margin-left: 48vw;
+  width: 51,2%;
+  background-color: rgb(255, 140, 0);
+}
+
+.quadrado a{
+  color:transparent;
+  cursor:default;
+}
+
+/* Principal - COMEÇO*/
+
+  /*Alinhar principal-content*/
+  .principal-content{
+    margin-top: -0.8vw;
+    height: 38.8vw;
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  /*Alinhar texto e fonte*/
+  .principal-content .principal-itens{
+    text-decoration: none;
+    font-family: 'Archivo Black';
+    align-items: center;  
+    font-size: 4vw;
+    display: flex;
+    width: 85vw;
+    list-style: none;
+    gap: 8.5vw; 
+  }
+
+  /*Fundo imagem e aliamento*/
+  .principal-itens img{
+    width: 48vw;
+    border-width: 5vw;
+    border-left: 20vw;
+    border-bottom: 8vw;
+    border-style: solid; 
+    border-color: rgb(255, 140, 0); 
+    align-items: center;  
+    list-style: none;
+    background-color: rgb(255, 140, 0);
+  }
+
+  /*Botões - COMEÇO*/
+    /*Alinhamento btn*/
+    .btn{
+      margin-top: -1vw;
+      display: flex;
+      gap: 1.2vw;
+    }
+
+    /*Tamanho btn e borda*/
+    .btn button {
+      font-family: 'calibri';
+      width: 8vw;
+      height: 3vw;
+      cursor: pointer;
+      border: 0.2vw solid rgb(52, 52, 52);
+      text-transform: uppercase;
+      font-size: 1vw;
+      border-radius: 50px;
+    }
+
+    /*Formas btn*/
+    .btn-cdt{
+      transform: 1ms ease-in;
+      color:#fff;
+      background-color:  rgb(52, 52, 52);
+    }
+    .btn-sm{
+      font-weight: bolder;
+      background-color: #fff;
+    }
+
+    /*Hover btns*/
+    .btn-cdt:hover{
+      color: rgb(255, 255, 255);
+      border: 0.2vw solid rgb(112, 112, 112);
+      background-color:rgb(112, 112, 112);
+    }
+    .btn-sm:hover{
+      font-weight: normal;
+      color:#fff;
+      background-color:  rgb(52, 52, 52);
+    }
+  /*Botões -  FIM*/
+/* Principal - FIM*/
+
+
+/* Curiosidade - classe sec-cdd - COMEÇO */
+  /* Alinhamento e cor - main */
+    .sec-cdd{
+      margin-top: -2vw;
+      height: 11vw;
+      background-color:#d1d1d1;  
+    }
+  /* Margem */
+    .sec-cdd li{
+      margin-left: 19vw;
+      list-style: none;
+    }
+  /* Tamanho e cor */  
+    .texto{
+      color: rgb(52, 52, 52);
+      width: 50vw;
+      font-family: 'calibri';
+      font-size: 2vw;
+    }
+  /* Alinhamento da img */  
+    .sec-cdd img{
+      width: 15vw;
+      align-content: center;
+      margin-top: -10vw;
+      margin-left: 58%;
+      float: left;
+    }
+/* Curiosidade - classe sec-cdd - FIM */
+
+
+/* Saiba mais - classe sec-sm - COMEÇO */
+  /* Tamanho e comportamento*/
+    .sec-sm{
+      width: 100%;
+      display: flex;
+      height: 30vw;
+    }
+
+  /* Comportamento, alinhamento e margem*/
+    .responsivo{
+      display: flex;
+      justify-content: center;
+      gap: 2.5vw;
+      margin-top: 1vw;
+      margin-bottom: 1vw;
+      margin-left: 19vw;
+    }
+
+  /* Tamanho do  bloco, cor e margem interna */
+    .bloco{
+      display: flex;
+      width: 19vw;
+      height: 25vw;
+      border: 0.15vw solid rgb(169, 169, 169);
+      border-radius: 1.3vw;
+      background-color: rgb(84, 84, 84);
+    }
+
+  /* Margem, fonte e cor dos textos*/
+    .conteudo{
+      margin-left: 2.5vw;
+      margin-right: 2.5vw;
+      width: 13vw;
+      color:#fff;
+      font-size: 1.2vw;
+      font-family: 'calibri';
+    }
+
+    /* Margem do texto*/
+      .texto-align{
+        margin-top: 3.5vw;
+      }
+  
+  /* Alinhamento e tamanho das imagens*/
+    .img-align{
+      display: flex;
+      width: 8vw;
+      margin-left: 2.6vw;
+      margin-top: 2.2vw;
+    }
+    
+    .img-align2{
+      display: flex;
+      width: 8vw;
+      margin-left: 2.6vw;
+      margin-top: 3.3vw;
+    }
+    
+/* Saiba mais - classe sec-sm - FIM */
+
+/*Contato - classe sec-ctt - COMEÇO*/
+.sec-ctt{
+  display: flex;
+  height: 15vw;  
+  background-color: rgb(111, 28, 158);
+}
+
+.ctt-itens{
+  margin-left: 19vw;
+  margin-top: 3vw;
+}
+
+.alg-itens{
+  color:#fff;
+  display: flex;
+  list-style: none;
+  gap: 3vw;
+  width: 63vw;
+  font-family: 'calibri';
+  font-size: 1.1vw;
+}
+
+
+
+/* FOOTER - COMEÇO */
+  
+  footer { 
+    color:#fff;
+    background-color: rgb(111, 28, 158);
+    bottom: 0;
+    width: 100%;
+    height: 3vh;
+  }
+  footer div{
+    bottom: 0;
+    width:100%;
+    justify-content: center;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+  }
+  footer p{
+    font-family: 'calibri';
+    font-size: 1vw;
+}
+
+/* FOOTER - FIM */

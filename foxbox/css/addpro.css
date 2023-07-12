@@ -1,0 +1,187 @@
+/* Importando fontes padrão */
+@import url("./fonts.css");
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+/*Zerando CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+/* Deixa responsivo */
+
+@media screen and (min-width: 25em){
+  html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
+}
+
+/* Safari <8 and IE <11 */
+@media screen and (min-width: 25em){
+  html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
+}
+@media screen and (min-width: 50em){
+
+html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* BODY */
+
+
+
+/* BLOCO 1 */
+.bloco-secundario{
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  gap: 1vh;
+  
+  background-color: rgb(111, 28, 158);
+  width:30vw;
+  height:100vh;
+}
+/* BLOCO 1 */
+
+
+
+/* ARQUIVO*/
+.imagem{
+  cursor:pointer;
+}
+
+input[type="file"] {
+  display:none;
+}
+
+
+label a img{ 
+  width: 5vw;
+  cursor:pointer;
+}
+
+.add {
+  margin-top: -10vw;
+  display: flex;
+  padding: 4.6vw 7vw 4vw 7vw;
+  border: 0.2vw solid rgb(255, 140, 0);
+  cursor: pointer;
+  border-radius: 0.7vw;
+}
+
+.add:hover {
+  background-color: rgba(255,255,255,0.3);
+}
+/**/
+
+
+
+
+/* BLOCO 2 */
+.alinhamento {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 2vw;
+}
+.bloco-principal {
+  padding:5vw;
+  gap:1vw;
+  width: 56vw;
+  height: 60vh;
+  background-color: rgb(84, 84, 84);
+  border-radius: 0.7vw;
+  display: flex;
+  align-items: center;
+}
+/* BLOCO 2 */
+
+
+
+/* IMAGEM  */
+.img {
+  position: relative;
+  display: flex;
+
+  background-color:  rgb(255, 140, 0);
+  width: 20vw;
+  height: 17vw;
+  align-content: center;
+  align-items: center;
+  justify-content: center; 
+}
+/* IMAGEM FIM */
+
+
+
+/* TEXTOS */
+.textos {
+  font-family: 'Calibri';
+  color: #fff;
+  gap:1vw;
+  width:30vw;
+  height:18vw;
+}
+
+.valordes{
+  font-size:1vw;
+}
+/* TEXTOS FIM */
+
+
+
+
+
+/* Formulário fundo, cor e tamanho - COMEÇO */
+.form-cadastro{
+  color: #fff;
+  height: 18.5vw ;
+  width: 19vw;
+}
+
+  /* TEXTOS */
+  .form-content{
+    text-align: center;
+    font-family: 'Archivo Black';
+  }
+/* Formulário fundo, cor e tamanho - FIM */
+
+/* Botões - COMEÇO */
+  .field input,
+  .field button{
+    margin-top: 1vw;
+    height: 6vh;
+    width: 100%;
+    border: none;
+    font-size: 1vw;
+  }
+  .field input{
+    padding: 0 1.5vw;
+  }
+  
+  .title{
+    margin-bottom:1vw;
+  }
+
+
+  /*Botão de login*/
+  .field button{
+      color: #fff;
+      background-color: rgb(255, 140, 0);
+      transition: all 0.3s ease;
+      cursor: pointer;
+  }
+  .field button:hover{
+      background-color:rgb(254, 154, 32);
+  }
+
+  .field button:disabled {
+    background-color:rgb(152, 89, 11);
+  }
+
+/* Botões - FIM */

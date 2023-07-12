@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/3df637a2f2.js" crossorigin="anonymous"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Login</title>
+  <link href="../css/login.css" rel="stylesheet" type="text/css" />
+  <link href="../css/cadastro.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="../images/img1.png" type="image/x-icon">
+</head>
+</head>
+
+<body>
+
+  <main id="login" class="fundo">
+    <div class="quadrado1_1"></div>
+    <div class="principal">
+      <section class="container-form">
+        <div class="form-login">
+          <div class="form-content">
+            <div class="title"><header>Login</header></div>
+            <form action="#" class="form" id="form">
+              <div class="field input-field">
+                <input type="email" placeholder="Email" class="email" id="email" required>
+              </div>
+              <div class="field input-field">
+                <input type="password" placeholder="Senha" minlength="6" class="password" id="password" required>
+                <i class='bx bx-hide eye-icon'></i>
+              </div>
+          </div>
+
+          <div class="field button-field">
+            <button type="submit" onclick='logar(); return false'>Login</button>
+          </div>
+          </form>
+          <div class="form-link">
+            <span>Ainda não tem uma conta? <a href="#cadastro" style="color: rgb(255, 140, 0)">Cadastre-se</a></span>
+          </div>
+        </div>
+        </section>
+      <div class="quadrado2">
+        <img class="imagem" src="../images/img3.png">
+      </div>
+    </div>
+  </main>
+
+  <main id="cadastro" class="fundo">
+    <div class="quadrado1"></div>
+    <div class="principal">
+      <div class="quadrado2">
+        <img class="imagem" src="../images/img4.png">
+      </div>
+      <section class="container-form">
+        <div class="form-cadastro">
+          <div class="form-content">
+            <div class="title"><header>Cadastro</header></div>
+            <form action="#" class="form" id="form">
+              <div class="field input-field">
+                <input type="email" placeholder="Email" class="cd-email" id="cd-email" required>
+              </div>
+              <div class="field input-field">
+                <input type="password" placeholder="Criar senha" minlength="6" class="create-password" id="create-password" required>
+                <i class='bx bx-hide eye-icon'></i>
+              </div>
+              <div class="field input-field">
+                <input type="password" placeholder="Confirmar senha" minlength="6" class="confirm-password" id="confirm-password" required>
+                <i class='bx bx-hide eye-icon'></i>
+              </div>
+          </div>
+
+          <div class="field button-field">
+            <button type="submit" onclick="validar()">Cadastrar</button>
+          </div>
+          </form>
+          <div class="form-link">
+            <span>Já em uma conta? <a href="#login" style="color: rgb(255, 140, 0)">Login</a></span>
+          </div>
+        </div>
+        </section>
+      </section>
+      
+    </div>
+  </main>
+
+    
+  <script>
+  /// logar ///
+  function logar() {
+  var login = document.getElementById('email').value;
+  var senha = document.getElementById('password').value;
+  
+  if (login == "projetoestoque22@gmail.com" && senha == 123456){ 
+    window.location.href = "estoque.html";
+    
+  } else {
+    alert ('usuario ou senha incorretos');}
+}
+  /// senha validação ///
+  function validar(){
+    var cadastro = document.getElementById('cd-email').value;
+    var createsenha = document.getElementById ('create-password').value;
+    var confirmsenha = document.getElementById ('confirm-password').value;
+
+    if(createsenha == confirmsenha){
+      alert('cadastrado');
+    } else {
+      alert ('n cadastrado');}
+  }
+
+  </script>
+  
+</body>
+
+</html>

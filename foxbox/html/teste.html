@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Preview de imagem carregada em input file</title>
+</head>
+<body>
+    <h1>Insira a imagem</h1>
+    <form>
+        <div>
+            <input id="img-input" type="file" name="imagem">
+        </div>
+        <div id="img-container">
+            <img id="preview" src="">
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+
+
+      
+<input class="input" type="text" placeholder="fill me">
+<button class="button" onclick="stateHandle()">Click Me</button>
+
+
+      
+    </form>
+
+  <script>
+    function readImage() {
+    if (this.files && this.files[0]) {
+        var file = new FileReader();
+        file.onload = function(e) {
+            document.getElementById("preview").src = e.target.result;
+        };       
+        file.readAsDataURL(this.files[0]);
+    }
+}
+document.getElementById("img-input").addEventListener("change", readImage, false);
+
+
+
+        function toggleButton() {
+ 
+      const password = document.getElementById('faixa').value;
+      const username = document.getElementById('titulo').value;
+      const password = document.getElementById('dsc').value;
+    
+      if (faixa && titulo && dsc) {
+        document.getElementById('botao').disabled = false;
+        return
+      }
+      document.getElementById('botao').disabled = true;
+}
+
+
+let input = document.querySelector(".input");
+let button = document.querySelector(".button");
+button.disabled = true;
+input.addEventListener("change", stateHandle);
+function stateHandle() {
+  if (document.querySelector(".input").value === "") {
+    button.disabled = true; 
+  } else {
+    button.disabled = false;
+  }
+}
+
+    
+  </script>
+
+
+  
+</body>
+</html>

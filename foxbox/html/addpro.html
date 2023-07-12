@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/3df637a2f2.js" crossorigin="anonymous"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Adicionar Produtos</title>
+  <link href="../css/addpro.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="../images/img1.png" type="image/x-icon">
+</head>
+
+<body>
+  
+  <main class="vsp">
+    <div class="alinhamento">
+      <div class="bloco-secundario">
+        <div class="conteudo">
+          <div class="bloco-um">
+            <div class="imagem" id="imagem">
+            <label for="arquivo" class="add"><a class="btn"><img src="../images/mais.png"></a></label>
+            <input type="file" class="arquivo" id="arquivo">
+        </div>
+          </div>
+        </div>
+
+
+        <section class="container-form">
+        <div class="form-cadastro">
+          <div class="form-content" onchange="habilitaBtn()">
+            <form action="#" class="form" id="form">
+              <div class="field input-field" id="sd">
+                <input type="text" placeholder="Tipo de produto" list="faixa" >
+                <datalist id="faixa">
+                  <select  id="opcao" value="--">
+                    <option value="Limpeza">Limpeza</option>
+                    <option value="Alimentação">Alimentação</option>
+                    <option value="Escritório">Escritório</option>
+                  </select>
+                </datalist>  
+              </div>
+              <div class="field input-field">
+                <input type="text" placeholder="Titulo" class="titulo" id="titulo">
+              </div>
+              <div class="field input-field">
+                <input  type="text" placeholder="Adicione uma descrição" class="dsc" id="dsc">
+              </div>
+          </div>
+
+          <div class="field button-field">
+            <button type="submit" onclick="escrever()" >Verificar</button>
+          </div>
+          <div class="field button-field">
+            <button type="submit" class="button" id="botao">Enviar</button>
+          </div>
+          </form>
+        </div>
+        </section>
+        
+          
+      </div>
+         
+      
+      <div class="bloco-principal">
+        <div class="img" id="img"></div>
+        <div class="titulo">   
+        </div>
+        <div class="textos">
+          <p class="valortit" id="valortit">Titulo</p>
+          <p class="valordes" id="valordes">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        </div>
+    </div>
+
+    
+    
+    <script>
+      
+    var valor = "";
+    var valores = "";
+      
+    function escrever(){ 
+      valor = document.getElementById('titulo').value;
+      document.getElementById('valortit').innerHTML = valor;
+    
+      valores = document.getElementById('dsc').value;
+      document.getElementById('valordes').innerHTML = valores;
+
+      imagem();
+
+      
+    }
+
+    var aq = "";
+
+    function imagem(){
+      aq = document.getElementById('arquivo').value;
+      document.getElementById('img').innerHTML = aq;
+
+    }
+
+      
+
+   </script>
+
+</body>
+
+</html>

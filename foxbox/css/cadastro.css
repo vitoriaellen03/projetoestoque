@@ -1,0 +1,189 @@
+/* Importando fontes padrão */
+@import url("./fonts.css");
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+/*Zerando CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+/* Deixa responsivo */
+
+@media screen and (min-width: 25em){
+  html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
+}
+
+/* Safari <8 and IE <11 */
+@media screen and (min-width: 25em){
+  html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
+}
+@media screen and (min-width: 50em){
+
+html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
+}
+
+html {
+  
+}
+
+/* BODY */
+
+body {
+
+}
+
+
+/* Fundo - COMEÇO */
+
+  /* Quadrados - alinhamento e display - COMEÇO */
+    .quadrado1{
+      height: 5vh;
+      background-color: rgb(111, 28, 158);
+      margin-left: 50%;
+      width: 50%;
+      display:relative;
+    }
+
+    .quadrado2{
+      background-color: rgb(111, 28, 158);
+      width: 50vw;
+      height: 95vh;
+      display: flex;
+    }
+
+  /* Quadrados - alinhamento e display - FIM */
+
+  /* Imagem ajuste */
+      .imagem{
+        width: 25vw;
+        height: 25vw;
+        margin-left: 40%;
+        margin-top: 20%;      
+      }
+/* Fundo - FIM */
+
+
+/*Conteudo principal Display - COMEÇO */
+
+.principal{
+  display: flex;
+}
+
+  /* Alinhamento formulário*/
+  .container-form{
+    display: flex;
+    width: 50vw;
+  }
+
+/*Conteudo principal Display - FIM */
+
+
+/* Formulário fundo, cor e tamanho - COMEÇO */
+.form-cadastro{
+  color: #fff;
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-bottom: 2vw;
+  height: 37vw ;
+  width: 32vw;
+  border: 0.15vw solid rgb(169, 169, 169);
+  border-radius: 1.3vw;
+  background-color: rgb(84, 84, 84);
+  padding: 3vw 4vw 4vw 4vw;
+}
+
+  /* TEXTOS */
+  .form-content{
+    text-align: center;
+    font-family: 'Archivo Black';
+  }
+/* Formulário fundo, cor e tamanho - FIM */
+
+/* Botões - COMEÇO */
+  .field input,
+  .field button{
+    margin-top: 1vw;
+    height: 6vh;
+    width: 100%;
+    border: none;
+    font-size: 1vw;
+  }
+  .field input{
+    padding: 0 1.5vw;
+  }
+  
+  .title{
+    margin-bottom:1vw;
+  }
+  
+  /*Botão de login*/
+  .field button{
+      color: #fff;
+      background-color: rgb(255, 140, 0);
+      transition: all 0.3s ease;
+      cursor: pointer;
+  }
+  .field button:hover{
+      background-color:rgb(254, 154, 32);
+  }
+/* Botões - FIM */
+  
+/* Form cadastro, textos - COMEÇO */
+  
+  .form-link{
+    text-align: center;
+    width:100%;
+    margin-top: 10px;
+  }
+  .form-link span,
+  .form-link a{
+    font-size: 1.2vw;
+    font-family:'calibri';
+  }
+  .form a{
+      text-decoration: none;
+  }
+  .form-content a:hover{
+      text-decoration: underline;
+  }
+
+/* Form cadastro, textos - FIM */
+
+
+
+
+/*
+
+        <form class="formulario" id="formulario">  
+          <div>
+            <div class="op" id="tipo">
+              <form action="#" class="form" id="form">
+                <form class="field input-field" id="tipo">
+                    <input type="text" placeholder="Tipo de produto" list="faixa">
+                      <datalist id="faixa">
+                          <option value="Limpeza">Limpeza</option>
+                          <option value="Alimentação">Alimentação</option>
+                          <option value="Escritório">Escritório</option>
+                </form>
+              </form>
+            </div>      
+            <div class="op" id="title">
+              <input type="text" placeholder="Titulo" class="titulo" id="titulo">
+            </div>
+            <div class="op" id="desc">
+              <input  type="text" placeholder="Adicione uma descrição" class="dsc" id="dsc">
+            </div>
+          </div>
+          <div>
+            <div class="botons">
+                <button type="submit" onclick="escrever()">Verificar</button>
+            </div>
+            <div class="botons">
+                <button type="submit" class="button" id="botao">enviar</button>
+            </div>
+          </div>
+        </form>
+
+*/
